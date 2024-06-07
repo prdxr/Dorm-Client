@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddGuestActivity"
+    tools:context=".activitys.AddGuestActivity"
     android:background="#F2EFE5"
     android:gravity="center">
     
@@ -17,6 +17,13 @@
         android:orientation="vertical"
         android:padding="30dp">
 
+        <TextView
+            android:id="@+id/add_guest_fullName_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="@string/full_name_guest" />
+
         <EditText
             android:id="@+id/add_guest_fullName"
             android:layout_width="match_parent"
@@ -25,10 +32,17 @@
             android:background="@drawable/login_rounded"
             android:backgroundTint="#F2EFE5"
             android:ems="10"
-            android:hint="Полное имя гостя"
+            android:hint="@string/full_name_guest"
             android:inputType="text"
             android:paddingHorizontal="20dp"
             android:paddingVertical="10dp" />
+
+        <TextView
+            android:id="@+id/add_guest_date_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="@string/guest_date_text" />
 
         <EditText
             android:id="@+id/add_guest_date"
@@ -38,10 +52,17 @@
             android:background="@drawable/login_rounded"
             android:backgroundTint="#F2EFE5"
             android:ems="10"
-            android:hint="Дата ГГГГ-ММ-ДД"
+            android:hint="@string/guest_date_text"
             android:inputType="text"
             android:paddingHorizontal="20dp"
             android:paddingVertical="10dp" />
+
+        <TextView
+            android:id="@+id/add_guest_timeFrom_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="@string/guest_timeFrom_text" />
 
         <EditText
             android:id="@+id/add_guest_timeFrom"
@@ -51,10 +72,17 @@
             android:background="@drawable/login_rounded"
             android:backgroundTint="#F2EFE5"
             android:ems="10"
-            android:hint="С ЧЧ:ММ:CC"
+            android:hint="@string/guest_timeFrom_text"
             android:inputType="text"
             android:paddingHorizontal="20dp"
             android:paddingVertical="10dp" />
+
+        <TextView
+            android:id="@+id/add_guest_timeTo_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="@string/guest_timeTo_text" />
 
         <EditText
             android:id="@+id/add_guest_timeTo"
@@ -64,7 +92,7 @@
             android:background="@drawable/login_rounded"
             android:backgroundTint="#F2EFE5"
             android:ems="10"
-            android:hint="По ЧЧ:ММ:CC1"
+            android:hint="@string/guest_timeTo_text"
             android:inputType="text"
             android:paddingHorizontal="20dp"
             android:paddingVertical="10dp" />
@@ -82,7 +110,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/login_rounded"
                 android:backgroundTint="#F2EFE5"
-                android:text="Отменить"
+                android:text="@string/text_cancel"
                 android:layout_marginRight="10dp" />
 
             <Button
@@ -92,7 +120,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/login_rounded"
                 android:backgroundTint="#F2EFE5"
-                android:text="Создать" />
+                android:text="@string/text_create" />
         </LinearLayout>
     </LinearLayout>
 </RelativeLayout>

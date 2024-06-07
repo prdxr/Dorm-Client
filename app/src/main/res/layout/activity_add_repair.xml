@@ -4,7 +4,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddRepairActivity"
+    tools:context=".activitys.AddRepairActivity"
     android:background="#F2EFE5"
     android:gravity="center">
 
@@ -17,6 +17,13 @@
         android:orientation="vertical"
         android:padding="30dp">
 
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="@string/repair_title" />
+
         <EditText
             android:id="@+id/add_repair_title"
             android:layout_width="match_parent"
@@ -25,10 +32,17 @@
             android:background="@drawable/login_rounded"
             android:backgroundTint="#F2EFE5"
             android:ems="10"
-            android:hint="Название заявки"
+            android:hint="@string/repair_title"
             android:inputType="text"
             android:paddingHorizontal="20dp"
             android:paddingVertical="10dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="@string/repair_description" />
 
         <EditText
             android:id="@+id/add_repair_description"
@@ -38,7 +52,7 @@
             android:background="@drawable/login_rounded"
             android:backgroundTint="#F2EFE5"
             android:ems="10"
-            android:hint="Описание заявки"
+            android:hint="@string/repair_description"
             android:inputType="text"
             android:paddingHorizontal="20dp"
             android:paddingVertical="10dp" />
@@ -56,7 +70,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/login_rounded"
                 android:backgroundTint="#F2EFE5"
-                android:text="Отменить"
+                android:text="@string/text_cancel"
                 android:layout_marginRight="10dp" />
 
             <Button
@@ -66,7 +80,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/login_rounded"
                 android:backgroundTint="#F2EFE5"
-                android:text="Создать" />
+                android:text="@string/text_create" />
         </LinearLayout>
     </LinearLayout>
 </RelativeLayout>
